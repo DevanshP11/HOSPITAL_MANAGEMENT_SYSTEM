@@ -1,0 +1,12 @@
+# Maven build folder
+target/
+
+# Local project configuration
+.vscode/
+
+# IDE files (e.g., from NetBeans/IntelliJ)
+*.iml
+.idea/
+
+# Database credentials file - NEVER commit this file
+db.properties

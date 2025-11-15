@@ -1,34 +1,45 @@
 package Project;
 
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.Properties;
 
-/**
- * This class provides a static method to get a connection
- * to our hospital_db database.
- * * This is the ONLY file in the project that knows the
- * database name or password.
- */
 public class ConnectionProvider {
+    // The properties object will store the data from db.properties
+    private static Properties dbProperties = new Properties();
+
+    // Static block runs when the class is loaded, loading the configuration
+    static {
+        try (InputStream input = ConnectionProvider.class.getClassLoader()
+                .getResourceAsStream("db.properties")) {
+            
+            if (input == null) {
+                System.out.println("ERROR: db.properties file not found in the classpath!");
+            } else {
+                dbProperties.load(input);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public static Connection getCon() {
         try {
-            // 1. Define your connection details
-            String dbName = "hospital_db"; // <-- Your new DB name
-            String jdbcUrl = "jdbc:mysql://localhost:3306/" + dbName;
-            String username = "root";
+            // Load the driver (only needed for older JDBC versions, but safe to keep)
+            Class.forName("com.mysql.cj.jdbc.Driver");
             
-            // --------------------------------------------------------
-            // !! IMPORTANT: Change this to your real MySQL password !!
-            String password = "Dev@1234"; 
-            // --------------------------------------------------------
-
-            // 2. Create and return the connection
-            Connection con = DriverManager.getConnection(jdbcUrl, username, password);
+            // Get connection details from the loaded properties
+            String url = dbProperties.getProperty("db.url");
+            String user = dbProperties.getProperty("db.user");
+            String password = dbProperties.getProperty("db.password");
+            
+            // Establish the connection
+            Connection con = DriverManager.getConnection(url, user, password);
             return con;
-
+            
         } catch (Exception e) {
-            // If the connection fails, print the error and return null
+            System.out.println("Connection Failed! Ensure MySQL is running and db.properties is correct.");
             e.printStackTrace();
             return null;
         }
