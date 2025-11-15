@@ -1,0 +1,37 @@
+/* home.css */
+
+.home-vbox {
+    -fx-padding: 20px;
+    -fx-spacing: 15px; /* Space between buttons */
+    -fx-background-color: #f4f4f4;
+    -fx-alignment: TOP_LEFT;
+}
+
+/* I removed the .header-label style 
+  since we deleted the label.
+*/
+
+.nav-button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: #0033ff; /* Your blue color */
+    -fx-text-fill: white;
+    
+    /* Make all buttons the same width */
+    -fx-max-width: 300px; 
+    -fx-pref-width: 300px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #0022bb; /* A darker blue for hover */
+    -fx-cursor: hand;
+}
+
+/* We can give the logout button a different, more urgent color */
+.logout-button {
+    -fx-background-color: #cc3300; /* A reddish color */
+}
+
+.logout-button:hover {
+    -fx-background-color: #aa2200;
+}

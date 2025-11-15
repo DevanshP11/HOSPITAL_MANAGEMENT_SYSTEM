@@ -1,0 +1,29 @@
+/* fullHistory.css */
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* Styling for the table itself */
+.history-table {
+    /* Using your original light blue color */
+    -fx-background-color: #CCFFFF; 
+    -fx-font-size: 13px;
+}
+
+/* Styling for the rows/cells */
+.history-table .table-row-cell,
+.history-table .column-header {
+    -fx-border-color: #aaa;
+}
+
+/* Styling for the Close Button */
+.button-close {
+    -fx-background-color: #00cccc; /* Cyan color from original app */
+    -fx-text-fill: #660033;      /* Dark Maroon color from original app */
+    -fx-font-weight: bold;
+    -fx-padding: 8 25 8 25;
+}
+.button-close:hover {
+    -fx-background-color: #00b3b3;
+}

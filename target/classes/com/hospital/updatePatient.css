@@ -1,0 +1,44 @@
+/* updatePatient.css */
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.search-bar {
+    -fx-padding: 15px;
+    -fx-background-color: #e0e0e0;
+}
+
+.label-search {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.form-grid {
+    -fx-padding: 20px 40px 20px 40px;
+    -fx-vgap: 15px; /* Vertical spacing */
+    -fx-hgap: 15px; /* Horizontal spacing */
+}
+
+.button-bar {
+    -fx-padding: 15px;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.button-search {
+    -fx-background-color: #0088AA;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-update {
+    -fx-background-color: #00A000; /* Green for Update */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-close {
+    -fx-background-color: #AA0000; /* Red for Close */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

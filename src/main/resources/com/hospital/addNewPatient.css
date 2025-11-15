@@ -1,0 +1,48 @@
+/* addNewPatient.css */
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.form-grid {
+    -fx-padding: 20px;
+    -fx-vgap: 10px; /* Vertical spacing */
+    -fx-hgap: 10px; /* Horizontal spacing */
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Using your light blue color */
+.text-field, .combo-box {
+    -fx-background-color: #66FFFF; /* 102, 255, 255 */
+    -fx-font-weight: bold;
+}
+
+.button-bar {
+    -fx-padding: 10px;
+    -fx-spacing: 15px;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+/* Using your blue color */
+.button-save {
+    -fx-background-color: #0033ff; /* 0, 51, 255 */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.button-save:hover {
+    -fx-background-color: #0022bb;
+}
+
+/* A different color for the close button */
+.button-close {
+    -fx-background-color: #aaa;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.button-close:hover {
+    -fx-background-color: #888;
+}

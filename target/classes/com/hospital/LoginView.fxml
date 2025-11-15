@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<GridPane 
+    xmlns:fx="http://javafx.com/fxml/1" 
+    xmlns="http://javafx.com/javafx/13"
+    fx:controller="com.hospital.LoginController" 
+    styleClass="login-grid"
+    stylesheets="@login.css">
+    
+    <Label text="Username:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+    <TextField fx:id="usernameField" promptText="Enter username" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+    
+    <Label text="Password:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <PasswordField fx:id="passwordField" promptText="Enter password" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+    
+    <HBox spacing="10" alignment="CENTER_RIGHT" GridPane.rowIndex="2" GridPane.columnIndex="1">
+        <Button fx:id="loginButton" text="Login" onAction="#onLoginButtonClick" />
+        <Button fx:id="closeButton" text="Close" onAction="#onCloseButtonClick" />
+    </HBox>
+    
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+    
+</GridPane>

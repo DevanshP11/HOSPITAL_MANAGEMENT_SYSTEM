@@ -1,0 +1,42 @@
+/* hospitalInfo.css */
+
+.root {
+    -fx-background-color: #95C9F3; /* Your original background color (149, 201, 243) */
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.main-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #660000; /* Dark red/maroon color from original */
+}
+
+.info-grid {
+    -fx-padding: 0 20 0 20;
+}
+
+.header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+    -fx-text-fill: #333333;
+}
+
+.text-content {
+    -fx-background-color: #7ED9EC; /* Light Cyan color from original (126, 217, 236) */
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-control-inner-background: #7ED9EC; /* Fixes background when scrolling */
+}
+
+.button-exit {
+    -fx-background-color: #660066; /* Your original purple/maroon color (102, 0, 102) */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8 30 8 30;
+}
+
+.button-exit:hover {
+    -fx-background-color: #440044;
+}

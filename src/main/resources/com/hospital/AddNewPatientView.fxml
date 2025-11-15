@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hospital.AddNewPatientController"
+            stylesheets="@addNewPatient.css">
+    
+    <center>
+        <GridPane styleClass="form-grid">
+            <Label text="Patient ID" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField fx:id="patientIdField" promptText="Enter Patient ID" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+            
+            <Label text="Name" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+            <TextField fx:id="nameField" promptText="Enter full name" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+            
+            <Label text="Contact No." GridPane.rowIndex="2" GridPane.columnIndex="0" />
+            <TextField fx:id="contactField" promptText="Enter contact number" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+            
+            <Label text="Age" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+            <TextField fx:id="ageField" promptText="Enter age" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+            
+            <Label text="Gender" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+            <ComboBox fx:id="genderComboBox" promptText="Select Gender" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+            
+            <Label text="Blood Group" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+            <TextField fx:id="bloodGroupField" promptText="Enter blood group" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+            
+            <Label text="Address" GridPane.rowIndex="6" GridPane.columnIndex="0" />
+            <TextField fx:id="addressField" promptText="Enter address" GridPane.rowIndex="6" GridPane.columnIndex="1" />
+            
+            <Label text="Any Major Disease Suffered Earlier" GridPane.rowIndex="7" GridPane.columnIndex="0" />
+            <TextField fx:id="diseaseField" promptText="Enter any previous major diseases" GridPane.rowIndex="7" GridPane.columnIndex="1" />
+            
+        </GridPane>
+    </center>
+    
+    <bottom>
+        <HBox styleClass="button-bar">
+            <Button text="Save" onAction="#onSaveClick" styleClass="button-save" />
+            <Button text="Close" onAction="#onCloseClick" styleClass="button-close" />
+        </HBox>
+    </bottom>
+    
+</BorderPane>

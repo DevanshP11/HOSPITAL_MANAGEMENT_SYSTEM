@@ -1,0 +1,52 @@
+/* addDiagnosis.css */
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.search-bar {
+    -fx-padding: 15px;
+    -fx-background-color: #e0e0e0;
+}
+
+.patient-table {
+    -fx-background-color: #f4f4f4;
+}
+
+.diagnosis-grid {
+    -fx-padding: 30px 20px 20px 20px;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.error-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+}
+
+.text-field, .combo-box {
+    -fx-background-color: #66FFFF; /* Light Cyan color from original Swing app */
+    -fx-font-weight: bold;
+}
+
+.button-search {
+    -fx-background-color: #0033ff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-save {
+    -fx-background-color: #008000; /* Green for Save */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-close {
+    -fx-background-color: #cc0000; /* Red for Close */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

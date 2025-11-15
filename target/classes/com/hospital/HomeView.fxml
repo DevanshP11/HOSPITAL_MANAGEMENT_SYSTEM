@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox 
+    xmlns:fx="http://javafx.com/fxml/1" 
+    xmlns="http://javafx.com/javafx/13"
+    fx:controller="com.hospital.HomeController"
+    styleClass="home-vbox"
+    stylesheets="@home.css">
+    
+    <Button 
+        fx:id="addPatientButton" 
+        text="Add new Patient Record" 
+        onAction="#onAddPatientClick" 
+        styleClass="nav-button" />
+    
+    <Button 
+        fx:id="addDiagnosisButton" 
+        text="Add diagnosis Information" 
+        onAction="#onAddDiagnosisClick" 
+        styleClass="nav-button" />
+    
+    <Button 
+        fx:id="fullHistoryButton" 
+        text="Full history of the Patient" 
+        onAction="#onFullHistoryClick" 
+        styleClass="nav-button" />
+    
+    <Button 
+        fx:id="updatePatientButton" 
+        text="Update Patient Record " 
+        onAction="#onUpdatePatientClick" 
+        styleClass="nav-button" />
+    
+    <Button 
+        fx:id="hospitalInfoButton" 
+        text="Hospital Information " 
+        onAction="#onHospitalInfoClick" 
+        styleClass="nav-button" />
+    
+    <Button 
+        fx:id="logoutButton" 
+        text="Logout" 
+        onAction="#onLogoutClick" 
+        styleClass="nav-button, logout-button" /> </VBox>

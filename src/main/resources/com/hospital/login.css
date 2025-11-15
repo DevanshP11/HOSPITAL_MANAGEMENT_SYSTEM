@@ -1,0 +1,39 @@
+/* login.css */
+
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-padding: 20px;
+    -fx-background-color: #f4f4f4; /* Light gray background for the window */
+}
+
+.login-grid {
+    -fx-vgap: 15px; /* Vertical spacing between items */
+    -fx-hgap: 10px; /* Horizontal spacing */
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.text-field, .password-field {
+    /* Using your original colors */
+    -fx-background-color: #0099cc;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #e0e0e0; /* Light hint text */
+}
+
+.button {
+    /* Using your original colors */
+    -fx-background-color: #0099cc;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-background-color: #0077a2; /* A darker blue for hover */
+    -fx-cursor: hand;
+}

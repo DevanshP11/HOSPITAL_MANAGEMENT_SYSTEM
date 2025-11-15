@@ -1,0 +1,9 @@
+com\hospital\App.class
+com\hospital\AddNewPatientController.class
+com\hospital\FullHistoryController.class
+com\hospital\HospitalInfoController.class
+Project\ConnectionProvider.class
+com\hospital\LoginController.class
+com\hospital\HomeController.class
+com\hospital\AddDiagnosisController.class
+com\hospital\UpdatePatientController.class
